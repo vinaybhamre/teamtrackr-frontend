@@ -14,6 +14,26 @@ TeamTrackr is a fullstack collaborative project management app built with the ME
 
 ## 📸 Screenshots
 
+### 🔐 Login Page
+
+![Login Page](./public/screenshots/teamtrackr_login.png)
+
+### 🔐 Sign Up Page
+
+![Sign Up Page](./public/screenshots/teamtrackr_signup.png)
+
+### 🏠 Home Page
+
+![Home Page](./public/screenshots/teamtrackr_home.png)
+
+### ✅ All Tasks
+
+![All Tasks Page](./public/screenshots/teamtrackr_alltasks.png)
+
+### 📊 Project Page
+
+![Project Page](./public/screenshots/teamtrackr_project.png)
+
 ## 🧪 Test Credentials (Demo Login)
 
 Use these credentials to try the app without signing up:
