@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+# 🧠 TeamTrackr – Project & Task Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TeamTrackr is a fullstack collaborative project management app built with the MERN stack. It allows users to create workspaces, manage projects, assign tasks, and collaborate with team members — all in one place.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌐 Workspace-based multi-user collaboration
+- 👥 Role-based access control (`Owner`, `Admin`, `Member`)
+- 📁 Create and manage multiple projects per workspace
+- ✅ Assign tasks with priorities, statuses, and due dates
+- 🔐 Authentication with password and external provider support
+- 🧩 Modular Mongoose schema design
+- 🌈 Emoji support for projects!
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🧪 Test Credentials (Demo Login)
 
-- Configure the top-level `parserOptions` property like this:
+Use these credentials to try the app without signing up:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+| Role   | Email                | Password    |
+| ------ | -------------------- | ----------- |
+| Owner  | `owner@example.com`  | `owner123`  |
+| Admin  | `admin@example.com`  | `admin123`  |
+| Member | `member@example.com` | `member123` |
+
+> These demo users are pre-seeded with realistic data (workspaces, projects, tasks).
+
+## ⚙️ Tech Stack
+
+- **Frontend**: React, TypeScript, Tailwind CSS, React Query
+- **Backend**: Node.js, Express, TypeScript
+- **Database**: MongoDB with Mongoose ODM
+- **Auth**: JWT, bcrypt, optional OAuth support
+
+## 🛠️ Local Development Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/teamtrackr-frontend.git
+cd teamtrackr-frontend
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+git clone https://github.com/your-username/teamtrackr-backend.git
+cd teamtrackr-backend
 ```
+
+### 2. Install Dependencies
+
+# for both frontend and backend
+
+npm install
+
+### 3. Environment Variables
+
+Create a .env file in both frontend and backend directory:
+
+# Backend
+
+npm run dev
+
+# Frontend (in separate terminal)
+
+npm run dev
+Visit: http://localhost:5173 to view the app
